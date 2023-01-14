@@ -1,1 +1,1 @@
-# node-canvas
+# Docker NodeJS + canvas
