@@ -1,4 +1,4 @@
-FROM node:18.16-alpine3.17
+FROM node:20-alpine3.20
 
 MAINTAINER Valmir Barbosa <github.com/valmirphp/node-canvas-docker>
 
