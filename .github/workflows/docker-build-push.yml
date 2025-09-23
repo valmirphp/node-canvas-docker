@@ -43,7 +43,13 @@ jobs:
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}
           type=semver,pattern={{major}}
+          type=match,pattern=\d+-alpine\d+\.\d+,group=0
           type=raw,value=latest,enable={{is_default_branch}}
+
+    - name: Debug metadata
+      run: |
+        echo "Tags: ${{ steps.meta.outputs.tags }}"
+        echo "Labels: ${{ steps.meta.outputs.labels }}"
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
