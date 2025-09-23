@@ -1,6 +1,6 @@
-FROM node:20-alpine3.20
+FROM node:22-alpine3.22
 
-MAINTAINER Valmir Barbosa <github.com/valmirphp/node-canvas-docker>
+LABEL maintainer="Valmir Barbosa <github.com/valmirphp/node-canvas-docker>"
 
 RUN apk add --no-cache \
     build-base \
